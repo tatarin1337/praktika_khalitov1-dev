@@ -49,5 +49,6 @@ namespace praktika_khalitov1
             context.SaveChanges();
             MessageBox.Show("Добро пожаловать!");    
         }
+
     }
 }

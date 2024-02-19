@@ -11,7 +11,7 @@ using praktika_khalitov1;
 namespace praktika_khalitov1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240217105410_Initial")]
+    [Migration("20240219113336_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

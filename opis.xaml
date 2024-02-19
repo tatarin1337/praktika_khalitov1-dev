@@ -1,0 +1,43 @@
+﻿<Window x:Class="praktika_khalitov1.opis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:praktika_khalitov1"
+        mc:Ignorable="d"
+        Title="opis" Height="450" Width="800" Background="#D7D7D9">
+    <Window.Resources>
+        <Style x:Key="tb" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="23" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+        <Style x:Key="bt" TargetType="Button">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Foreground" Value="#F2F2F2"/>
+            <Setter Property="Background" Value="#6C7073"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.ColumnSpan="4" Grid.Column="1" Grid.RowSpan="4" Fill="Transparent" Stroke="#403227" StrokeThickness="2"/>
+        <TextBlock Grid.ColumnSpan="4" Grid.Column="1" Grid.RowSpan="4" Background="#F2F2F2" Width="530" Height="340" FontSize="18" Text="&#xa;Каждому из нас рано или поздно приходится сталкиваться &#xa; с необходимостью ремонта. И особенно актуальным этот &#xa; вопрос становится после приобретения новой квартиры. &#xa; Однако планируя начать ремонт, немногие владельцы жилья &#xa; понимают, насколько сложный процесс им предстоит. &#xa; Для того чтобы ремонт завершился быстрее, необходимо &#xa; обеспечить бесперебойную поставку материалов. &#xa; Поскольку ехать в крупные гипермаркет не всегда есть время &#xa; и возможность, то наш небольшой магазин стройматериалов, &#xa; расположенный поблизости, окажется как нельзя кстати."/>
+        <Image Source="foto/13.png" Grid.Row="4"/>
+        <Button Style="{StaticResource bt}" Grid.ColumnSpan="2" Grid.Row="4" Grid.Column="2" Click="Button_Click">Назад</Button>
+    </Grid>
+</Window>

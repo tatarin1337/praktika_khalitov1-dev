@@ -69,7 +69,7 @@ namespace praktika_khalitov1 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/praktika_khalitov1;V1.0.0.0;component/reg.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/praktika_khalitov1;component/reg.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\reg.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
